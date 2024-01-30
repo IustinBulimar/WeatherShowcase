@@ -9,9 +9,22 @@ import SwiftUI
 
 @main
 struct WeatherShowcaseApp: App {
+    init() {
+        insertDependencies()
+    }
+    
     var body: some Scene {
         WindowGroup {
-            EmptyView()
+            if isRunningTests {
+                EmptyView()
+            } else {
+                WeatherView()
+            }
         }
+    }
+    
+    private func insertDependencies() {
+        Dependencies[LocationService.self] = LocationServiceStub()
+        Dependencies[WeatherService.self] = WeatherServiceStub(shouldFail: false)
     }
 }
