@@ -24,7 +24,10 @@ struct WeatherShowcaseApp: App {
     }
     
     private func insertDependencies() {
+        Dependencies[NetworkService.self] = URLSession.shared
         Dependencies[LocationService.self] = CoreLocationService()
-        Dependencies[WeatherService.self] = WeatherServiceStub(shouldFail: false)
+        
+        let openWeatherApiKey = environmentValue(for: "OPEN_WEATHER_API_KEY")
+        Dependencies[WeatherService.self] = OpenWeatherService(apiKey: openWeatherApiKey)
     }
 }
