@@ -23,6 +23,7 @@
 		D1BB35422B696D8B00DA5801 /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BB35412B696D8B00DA5801 /* WeatherView.swift */; };
 		D1BB35482B696D8B00DA5801 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BB35472B696D8B00DA5801 /* Utility.swift */; };
 		D1FF1E082B69403D007FA554 /* ErrorAlertModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FF1E072B69403D007FA554 /* ErrorAlertModifier.swift */; };
+		D1FF1E0A2B694EA7007FA554 /* CoreLocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FF1E092B694EA7007FA554 /* CoreLocationService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		D1BB35412B696D8B00DA5801 /* WeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
 		D1BB35472B696D8B00DA5801 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		D1FF1E072B69403D007FA554 /* ErrorAlertModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorAlertModifier.swift; sourceTree = "<group>"; };
+		D1FF1E092B694EA7007FA554 /* CoreLocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreLocationService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +131,7 @@
 			children = (
 				D1BB352C2B696D8B00DA5801 /* LocationService.swift */,
 				D1BB352A2B696D8B00DA5801 /* WeatherService.swift */,
+				D1FF1E092B694EA7007FA554 /* CoreLocationService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 				D1BB35422B696D8B00DA5801 /* WeatherView.swift in Sources */,
 				D1BB35352B696D8B00DA5801 /* PresentableError.swift in Sources */,
 				D1BB352B2B696D8B00DA5801 /* WeatherService.swift in Sources */,
+				D1FF1E0A2B694EA7007FA554 /* CoreLocationService.swift in Sources */,
 				D1BB353C2B696D8B00DA5801 /* WeatherServiceStub.swift in Sources */,
 				D1BB352F2B696D8B00DA5801 /* WeatherViewModel.swift in Sources */,
 				D1BB353E2B696D8B00DA5801 /* WeatherForecastMock.swift in Sources */,
@@ -420,6 +424,7 @@
 				DEVELOPMENT_TEAM = W2X2D3BDQX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Location needed for app to work";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -452,6 +457,7 @@
 				DEVELOPMENT_TEAM = W2X2D3BDQX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Location needed for app to work";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

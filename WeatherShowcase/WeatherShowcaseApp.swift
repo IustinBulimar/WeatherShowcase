@@ -24,7 +24,7 @@ struct WeatherShowcaseApp: App {
     }
     
     private func insertDependencies() {
-        Dependencies[LocationService.self] = LocationServiceStub()
+        Dependencies[LocationService.self] = CoreLocationService()
         Dependencies[WeatherService.self] = WeatherServiceStub(shouldFail: false)
     }
 }
